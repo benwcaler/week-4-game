@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,14 +11,49 @@
     <script src="assets/javascript/game.js"></script>
     <title>Crystal Collector</title>
 </head>
+
 <body>
-    <div>Random number between: <span id="rN"></span></div>
-    <div>Wins: <span id="wins"></span></div>
-    <div>Losses: <span id="losses"></span></div>
-    <div>Current Score: <span id="score"></span></div>
-    <div id="g1" class="gem" value = "">gem 1</div>
-    <div id="g2" class="gem" value = "">gem 2</div>
-    <div id="g3" class="gem" value = "">gem 3</div>
-    <div id="g4" class="gem" value = "">gem 4</div>
+    <div class="title">CRYSTAL COLLECTOR</div>
+    <div class="instructions">
+        <div class="insttitle">
+            INSTRUCTIONS
+        </div>
+        <div>
+            <ol>
+                <li>You will be given a random number at the start of the game. </li>
+                <li>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
+                    total score. </li>
+                <li>You win the game by matching your total score to the random number. You lose the game if your total score
+                    goes above the random number. </li>
+                <li>The value of each crystal is hidden from you until you click on it. </li>
+                <li>Each time the game starts, the values of the crystals will change. </li>
+            </ol>
+        </div>
+    </div>
+    <div class="numDiv">
+        <div class="numbers">Number to achieve:
+            <span id="rN"></span>
+        </div>
+        <div class="numbers">Score:
+            <span id="score"></span>
+        </div>
+    </div>
+    <div id="images">
+        <div>
+            <img id="g1" class="gem" src="assets/images/diamond.png" alt="diamond">
+            <img id="g2" class="gem" src="assets/images/citrine.png" alt="citrine">
+            <img id="g3" class="gem" src="assets/images/emerald.png" alt="emerald">
+            <img id="g4" class="gem" src="assets/images/ruby.png" alt="ruby">
+        </div>
+    </div>
+    <div class="numDiv">
+        <div class="numbers">Wins:
+            <span id="wins"></span>
+        </div>
+        <div class="numbers">Losses:
+            <span id="losses"></span>
+        </div>
+    </div>
 </body>
+
 </html>
